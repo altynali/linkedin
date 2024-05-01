@@ -12,14 +12,14 @@ export const MyInput: FC<TextFieldProps> = ({
   value,
   onChange,
   variant = "outlined",
-  className,
+  // className,
   required,
+  fullWidth = true,
   type,
   ...rest
 }) => {
   return (
-    <div className={className}>
-      <FormControl>
+      <FormControl fullWidth={fullWidth}>
         <TextField
           required={required}
           label={label}
@@ -28,12 +28,12 @@ export const MyInput: FC<TextFieldProps> = ({
           value={value}
           onChange={onChange}
           type={type}
+          fullWidth={fullWidth}
           {...rest}
         />
         <FormHelperText id="my-helper-text" error>
           {helperText}
         </FormHelperText>
       </FormControl>
-    </div>
   );
 };

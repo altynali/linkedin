@@ -1,12 +1,13 @@
-import { Box } from "@mui/material";
-// import { Form } from "../../components/form/Form";
-// import { TodoList } from "../../components/todo/list/TodoList";
+import { Box } from "@mui/material"; 
+import { Form } from "../../shared/components/form/Form";
+import classes from './Dashboard.module.css';
+import { PostList } from "../../shared/components/post/postList/PostList";
 
 const Dashboard = () => {
   return (
-    <Box>
-      {/* <Form /> */}
-      {/* <TodoList /> */}
+    <Box className={classes.root}>
+      <Form />
+      <PostList />
     </Box>
   );
 };

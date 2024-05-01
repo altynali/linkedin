@@ -1,7 +1,8 @@
-import { FC, PropsWithChildren } from "react";
-import { Footer } from "./footer/Footer";
+import { FC, PropsWithChildren } from "react"; 
 import { Header } from "./header/Header";
-import classes from "./Layout.module.css";
+import classes from "./Layout.module.css"; 
+import LeftSidebar from "./leftSidebar/LeftSidebar";
+import RightSidebar from "./rightSidebar/RightSidebar";
 
 export type LayoutProps = PropsWithChildren;
 
@@ -11,10 +12,12 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
     <div className={classes.root}>
       <Header />
       <div className={classes.children}>
-        {/* {fetchState === FetchState.Loading ? <Loader /> : children} */}
-        {children}
+        <div className={classes.grid}>
+          <LeftSidebar/>
+            {children}
+          <RightSidebar/>
+        </div>
       </div>
-      <Footer />
     </div>
   );
 };

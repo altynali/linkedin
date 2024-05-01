@@ -3,10 +3,17 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .children {
-  padding: 20px;
   height: 100%;
+  background-color: var(--main-bg-color);
+  /* min-height: 500vh;  */
+  padding: var(--content-padding-top) var(--lg-layout-margin); 
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: var(--left-sidebar-width) 1fr var(--right-sidebar-width);
+  gap: 20px;
 }

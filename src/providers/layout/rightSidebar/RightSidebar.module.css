@@ -1,0 +1,8 @@
+.root{
+    width: var(--right-sidebar-width);
+    position: sticky;
+    top: var(--right-sidebar-offset);
+    right: var(--lg-layout-margin);
+    overflow-x: clip;
+    position: -webkit-sticky;
+}
