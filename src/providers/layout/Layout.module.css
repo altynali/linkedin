@@ -6,6 +6,10 @@
   background-color: var(--main-bg-color);
 }
 
+.content{
+  display: grid;
+}
+
 .children {
   height: 100%;
   padding: var(--content-padding-top) 0; 

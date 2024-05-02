@@ -3,6 +3,7 @@
   padding: 12px;
   border-radius: 10px;
   border: 1px solid var(--secondary-line-color);
+  max-height: 164px;
 }
 
 .topSection{

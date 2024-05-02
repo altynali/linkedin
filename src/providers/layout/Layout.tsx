@@ -3,6 +3,7 @@ import { Header } from "./header/Header";
 import classes from "./Layout.module.css"; 
 import LeftSidebar from "./leftSidebar/LeftSidebar";
 import RightSidebar from "./rightSidebar/RightSidebar";
+import { Form } from "../../shared/components/form/Form";
 
 export type LayoutProps = PropsWithChildren;
 
@@ -14,7 +15,10 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
       <div className={classes.children}>
         <div className={classes.grid}>
           <LeftSidebar/>
-            {children}
+            <main className={classes.content}>
+              <Form />
+              {children}
+            </main>
           <RightSidebar/>
         </div>
       </div>
