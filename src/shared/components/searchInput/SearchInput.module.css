@@ -3,14 +3,10 @@
     margin-left: 10px;
 }
 
-.root form{
-    max-height: 40px;
+.root > form{
+    background: #f0f4fc;
 }
 
-.react-icons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* width: 55%; */
-    margin-left: 10px;
+.root form{
+    max-height: 40px;
 }

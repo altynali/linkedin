@@ -19,7 +19,7 @@ export const Header = () => {
           <div className={classes.left}> 
             <img className={classes.logo} src={LinkedinIcon} alt="linkedin logo"/> 
             <span className={classes.searchIcon}>
-              <Icon icon={SearchIcon} alt="Search Icon" bottomText='Search' />
+              <Icon icon={SearchIcon} alt="Search Icon" bottomText='Search' navIcon />
             </span>
             <span className={classes.input}>
               <SearchInput />
