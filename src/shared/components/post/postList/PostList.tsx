@@ -11,8 +11,6 @@ export type PostListProps = {
 export const PostList: FC<PostListProps> = () => {
   const { loading, data } = useGetPosts()
 
-  console.log(loading, data);
-  
   if(loading) {
     return <Loader/>
   }
