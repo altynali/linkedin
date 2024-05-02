@@ -1,16 +1,38 @@
 .header{
   background-color: var(--white-bg-color);
   max-height: var(--header-height);
-  padding: 0 30px; 
+  padding: 0 var(--lg-layout-padding); 
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   right: 0;
+  width: 100vw;
+  border-bottom: 1px solid var(--main-line-color);
+  z-index: 100;
+}
+
+.headerInnerWrapper {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: var(--layout-xl-max-width);
+}
+
+@media screen and (max-width: 1176px) {
+  .headerInnerWrapper {
+      width: 100%;
+  }
+}
+
+.logo {
+  width: 41px;
+  height: 41px;
 }
 
 @media only screen and (min-width: 1300px){
   .header{ 
-    padding: 0 var(--lg-layout-margin); 
+    padding: 0 var(--lg-layout-padding); 
   }
 }
 
@@ -26,7 +48,7 @@
 
 .input{
   display: flex;
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 @media only screen and (max-width: 1050px){
@@ -61,7 +83,7 @@
 }
 
 .verticalLine{
-  border-left: 1px solid #f4f2ee;
+  border-left: 1px solid var(--secondary-line-color);
   margin-left: 15px;
   height: 62px;
 }

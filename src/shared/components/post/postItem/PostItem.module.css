@@ -1,0 +1,23 @@
+.root {
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: 1px solid var(--secondary-line-color);
+  border-radius: 10px;
+}
+
+.img{
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.actions{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.horizontalLine{
+  border-top: 1px solid var(--main-line-color);
+}

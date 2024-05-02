@@ -3,8 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    background: var(--white-bg-color);
+    /* background: var(--white-bg-color); */
     padding: 20px;
     text-align: center;
 }
@@ -21,6 +20,7 @@
     widows: 60px;
     height: 60px;
     margin: 10px 0;
+    margin-right: 10px;
 }
 
 .rightIcon {

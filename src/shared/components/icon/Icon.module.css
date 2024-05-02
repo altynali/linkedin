@@ -4,16 +4,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.navIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 20px;
 }
-.reactIcon {
+
+.column{
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 55%; */
 }
 
 .bottomText {
+    font-size: 12px;
+    margin-top: 3px;
+    color: black;
+}
+
+.rightText {
     font-size: 12px;
     margin-top: 3px;
     color: black;

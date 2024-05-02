@@ -12,11 +12,32 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --header-height: 62px;
+
   --white-bg-color: #fff;
   --main-bg-color: #f4f2ee;
-  --lg-layout-margin: 100px;
-  --left-sidebar-width: 225px;
-  --right-sidebar-width: 300px;
+  --main-line-color: #f4f2ee;
+  --secondary-line-color: #d1d0d0;
+
+  --lg-layout-margin: 156px;
+  --lg-layout-padding: 24px;
   --content-padding-top: 30px;
+
+  --left-sidebar-width: 225px;
+
+  --right-sidebar-width: 300px;
   --right-sidebar-offset: 92px;
+
+  --dashboard-width-xl: 555px;
+  --dashboard-width-lg: 387px;
+  --dashboard-width-md: 471px;
+
+  --layout-none-max-width: 576px;
+  --layout-md-max-width: 720px;
+  --layout-lg-max-width: 960px;
+  --layout-xl-max-width: 1128px;
+}
+
+p{
+  margin: 0;
+  padding: 0;
 }

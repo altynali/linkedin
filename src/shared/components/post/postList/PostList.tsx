@@ -4,7 +4,7 @@ import { useGetPosts } from '../../../utils/getPosts';
 import { Loader } from '../../loader/Loader';
 import { PostItem } from '../postItem/PostItem';
 
-export interface PostListProps {
+export type PostListProps = {
   className?: string;
 }
 
@@ -19,7 +19,7 @@ export const PostList: FC<PostListProps> = () => {
 
   return (
     <div className={classes.root}>
-        {data?.map((post) => <PostItem />)}
+        {data?.map((post) => <PostItem key={post.id} {...post}/>)}
     </div>
   );
 };

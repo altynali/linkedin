@@ -1,8 +1,9 @@
 import axios from "axios";
 import postsApi from "../config/axiosConfig";
 import { useEffect, useState } from "react";
+import { PostType } from "../types/postType";
 
-export const useGetPosts = () => {
+export const useGetPosts = (): {loading: boolean, data: PostType[]} => {
 const [loading, setLoading] = useState(true);
 const [data, setData] = useState([])
 

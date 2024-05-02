@@ -15,31 +15,24 @@ import { Icon } from "../../../shared/components/icon/Icon";
 export const Header = () => {
   return (
     <header className={classes.header}>
-      <Box
-        sx={{
-          display:'flex',
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: 0
-        }}
-      > 
+      <Box className={classes.headerInnerWrapper}> 
           <div className={classes.left}> 
-            <img src={LinkedinIcon} alt="linkedin logo"/> 
+            <img className={classes.logo} src={LinkedinIcon} alt="linkedin logo"/> 
             <span className={classes.searchIcon}>
-              <Icon icon={SearchIcon} alt="Search Icon" text='Search' />
+              <Icon icon={SearchIcon} alt="Search Icon" bottomText='Search' />
             </span>
             <span className={classes.input}>
               <SearchInput />
             </span>
           </div>  
-            <Icon icon={HomeIcon} alt="Home Icon" text='Home'/>
-            <Icon icon={NetworkIcon} alt="Network Icon" text='Network'/>
-            <Icon icon={PositionsIcon} alt="Positions Icon" text='Positions'/>
-            <Icon icon={MessagesIcon} alt="Messages Icon" text='Messages'/>
-            <Icon icon={NotificationsIcon} alt="Notifications Icon" text='Notifications'/>
-            <Icon icon={ProfileIcon} alt="Profile Icon" text='Profile'/>
-            <div className={classes.verticalLine}></div>
-            <Icon icon={ForBusinessIcon} alt="ForBusiness Icon" text='For Business' style={{marginLeft:10}}/>
+            <Icon icon={HomeIcon} alt="Home Icon" bottomText='Home' navIcon />
+            <Icon icon={NetworkIcon} alt="Network Icon" bottomText='Network' navIcon />
+            <Icon icon={PositionsIcon} alt="Positions Icon" bottomText='Positions' navIcon />
+            <Icon icon={MessagesIcon} alt="Messages Icon" bottomText='Messages' navIcon />
+            <Icon icon={NotificationsIcon} alt="Notifications Icon" bottomText='Notifications' navIcon />
+            <Icon icon={ProfileIcon} alt="Profile Icon" bottomText='Profile' navIcon />
+            <div className={classes.verticalLine} />
+            <Icon icon={ForBusinessIcon} alt="ForBusiness Icon" bottomText='For Business' style={{ marginLeft:10 }} navIcon />
             <a className={classes.premium} href="https://www.linkedin.com/premium/products/?upsellOrderOrigin=premium_nav_upsell_text&referenceId=5P%2BgCJ15RmWAF3d6jaHmLA%3D%3D&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F">
               Get access to Premium tools and statistics
             </a>
