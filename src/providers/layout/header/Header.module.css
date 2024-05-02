@@ -6,7 +6,6 @@
   position: -webkit-sticky;
   top: 0;
   right: 0;
-  width: 100vw;
   border-bottom: 1px solid var(--main-line-color);
   z-index: 100;
 }
