@@ -1,6 +1,6 @@
 .root{
   background: var(--white-bg-color);
-  padding: 12px;
+  padding: 15px 12px;
   border-radius: 10px;
   border: 1px solid var(--secondary-line-color);
   max-height: 164px;
@@ -22,5 +22,5 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin: 10px 0;
 }

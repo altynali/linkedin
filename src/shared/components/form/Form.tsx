@@ -19,14 +19,15 @@ export const Form: FC<FormProps> = () => {
               '& .MuiOutlinedInput-root': {
               '& fieldset': {
                 borderRadius: '30px',
+                padding: '12.5px 14px',
               },
             },
           }} placeholder='New Post' />
         </div>
         <div className={classes.actions}>
-          <Icon icon={CommentIcon} alt="ThumbUp Icon" rightText='Like' row />
-          <Icon icon={CommentIcon} alt="Comment Icon" rightText='Comment' row />
-          <Icon icon={CommentIcon} alt="ThumbUp Icon" rightText='Like' row />
+          <Icon icon={CommentIcon} alt="ThumbUp Icon" rightText='Media Resources' row />
+          <Icon icon={CommentIcon} alt="Comment Icon" rightText='Event' row />
+          <Icon icon={CommentIcon} alt="ThumbUp Icon" rightText='Write an article' row />
         </div>
     </div>
   );

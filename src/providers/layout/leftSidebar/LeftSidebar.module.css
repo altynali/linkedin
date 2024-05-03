@@ -30,7 +30,7 @@
 }
 
 .blueText {
-  color:rgb(10, 102, 194);
+  color:var(--blue-color);
   font-size: 12px;
   font-weight: 600;
 }
