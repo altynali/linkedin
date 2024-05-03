@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import classes from './PostItem.module.css';
 import { PostType } from '../../../types/postType';
-import { Avatar, Card, CardActions, CardContent, CardHeader, CardMedia, Typography } from '@mui/material';
+import { Avatar, Card, CardContent, CardHeader, CardMedia, Typography } from '@mui/material';
 import ThumbUpIcon from"../../../../assets/thumbUp.svg" 
 import CommentIcon from"../../../../assets/comment-2-svgrepo-com.svg"
 import { Icon } from '../../icon/Icon';
@@ -25,11 +25,6 @@ export const PostItem: FC<PostItemProps> = ({ body, userId }) => {
           sx={{
             borderRadius: 10
           }}
-          // action={
-          //   <IconButton aria-label="settings">
-          //     <MoreVertIcon />
-          //   </IconButton>
-          // }
           title="Shrimp and Chorizo Paella"
           subheader="September 14, 2016"
         />
@@ -46,12 +41,12 @@ export const PostItem: FC<PostItemProps> = ({ body, userId }) => {
           alt="Paella dish"
         />
         <div className={classes.horizontalLine} />
-        <CardActions className={classes.actions}>
+        <div className={classes.actions}>
           <Icon icon={ThumbUpIcon} alt="ThumbUp Icon" bottomText='Like' />
           <Icon icon={CommentIcon} alt="Comment Icon" bottomText='Comment' />
           <Icon icon={ThumbUpIcon} alt="ThumbUp Icon" bottomText='Like' />
           <Icon icon={CommentIcon} alt="Comment Icon" bottomText='Comment' />
-        </CardActions>
+        </div>
       </Card>
     </div>
   );
