@@ -35,7 +35,6 @@ export const PostItem: FC<PostItemProps> = ({ body, userId }) => {
         </CardContent>
         <CardMedia
           component="img"
-          // height={600}
           className={classes.img}
           image="https://media.licdn.com/dms/image/D5622AQHtqidKgMxYYw/feedshare-shrink_2048_1536/0/1714638841190?e=1717632000&v=beta&t=2wHPPT0evHECoANM_JviWhAkPI8GceOOAuxX9jMBLok"
           alt="Paella dish"
