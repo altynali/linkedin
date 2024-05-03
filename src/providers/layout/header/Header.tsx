@@ -32,7 +32,7 @@ export const Header = () => {
             <Icon icon={NotificationsIcon} alt="Notifications Icon" bottomText='Notifications' navIcon />
             <Icon icon={ProfileIcon} alt="Profile Icon" bottomText='Profile' navIcon />
             <div className={classes.verticalLine} />
-            <Icon icon={ForBusinessIcon} alt="ForBusiness Icon" bottomText='For Business' style={{ marginLeft:10 }} navIcon />
+            <Icon icon={ForBusinessIcon} alt="ForBusiness Icon" bottomText='Business' style={{ marginLeft:10 }} navIcon />
             <a className={classes.premium} href="https://www.linkedin.com/premium/products/?upsellOrderOrigin=premium_nav_upsell_text&referenceId=5P%2BgCJ15RmWAF3d6jaHmLA%3D%3D&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F">
               Get access to Premium tools and statistics
             </a>

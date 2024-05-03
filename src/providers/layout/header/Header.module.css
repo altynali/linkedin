@@ -16,6 +16,7 @@
   align-items: center;
   margin: 0 auto;
   width: var(--layout-xl-max-width);
+  max-height: var(--header-height);
 }
 
 @media screen and (max-width: 1176px) {
