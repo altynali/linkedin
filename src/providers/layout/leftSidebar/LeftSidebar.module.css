@@ -1,9 +1,9 @@
-.root{
+.root {
   width: var(--left-sidebar-width);
 }
 
-@media only screen and (max-width: 768px){
-  .root{
+@media only screen and (max-width: 768px) {
+  .root {
     width: 100%;
   }
 }
@@ -15,7 +15,7 @@
   border-radius: 10px;
 }
 
-.cardTopSection{
+.cardTopSection {
   padding: 15px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .blueText {
-  color:var(--blue-color);
+  color: var(--blue-color);
   font-size: 12px;
   font-weight: 600;
 }
@@ -54,10 +54,10 @@
   margin: 0;
 }
 
-.horizontalLine{
+.horizontalLine {
   border-top: 1px solid var(--main-line-color);
 }
 
-.bottomCard{
+.bottomCard {
   margin-top: 10px;
 }

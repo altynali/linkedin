@@ -5,12 +5,12 @@
   border-radius: 10px;
 }
 
-.img{
+.img {
   object-fit: contain;
   margin-bottom: 20px;
 }
 
-.actions{
+.actions {
   margin: 10px 0;
   display: flex;
   justify-content: space-between;
@@ -18,6 +18,6 @@
   padding: 10px 20px;
 }
 
-.horizontalLine{
+.horizontalLine {
   border-top: 1px solid var(--main-line-color);
 }

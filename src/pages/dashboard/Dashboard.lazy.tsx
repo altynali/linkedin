@@ -1,3 +1,3 @@
-import { lazy } from "react";
+import { lazy } from 'react'
 
-export const Dashboard = lazy(() => import("./Dashboard"));
+export const Dashboard = lazy(() => import('./Dashboard'))

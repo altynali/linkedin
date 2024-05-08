@@ -1,10 +1,10 @@
-import { FC } from 'react';
-import classes from './PostItem.module.css';
-import { PostType } from '../../../types/postType';
-import { Avatar, Card, CardContent, CardHeader, CardMedia, Typography } from '@mui/material';
-import ThumbUpIcon from"../../../../assets/thumbUp.svg" 
-import CommentIcon from"../../../../assets/comment-2-svgrepo-com.svg"
-import { Icon } from '../../icon/Icon';
+import { Avatar, Card, CardContent, CardHeader, CardMedia, Typography } from '@mui/material'
+import { FC } from 'react'
+import CommentIcon from '../../../../assets/comment-2-svgrepo-com.svg'
+import ThumbUpIcon from '../../../../assets/thumbUp.svg'
+import { PostType } from '../../../types/postType'
+import { Icon } from '../../icon/Icon'
+import classes from './PostItem.module.css'
 
 export type PostItemProps = {
   className?: string;
@@ -48,5 +48,5 @@ export const PostItem: FC<PostItemProps> = ({ body, userId }) => {
         </div>
       </Card>
     </div>
-  );
-};
+  )
+}

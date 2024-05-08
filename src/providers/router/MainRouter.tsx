@@ -1,9 +1,9 @@
-import { Route, Routes } from "react-router-dom";
-import { routes } from "../../pages/routes";
-import { Loader } from "../../shared/components/loader/Loader";
-import { Suspense,   } from "react"; 
+import { Route, Routes } from 'react-router-dom'
+import { routes } from '../../pages/routes'
+import { Loader } from '../../shared/components/loader/Loader'
+import { Suspense } from 'react'
 
-const MainRouter = () => { 
+const MainRouter = () => {
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
@@ -12,7 +12,7 @@ const MainRouter = () => {
         ))}
       </Routes>
     </Suspense>
-  );
-};
+  )
+}
 
-export default MainRouter;
+export default MainRouter

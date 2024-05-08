@@ -1,28 +1,29 @@
-import axios from "axios";
-import postsApi from "../config/axiosConfig";
-import { useEffect, useState } from "react";
-import { PostType } from "../types/postType";
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+import postsApi from '../config/axiosConfig'
+import { PostType } from '../types/postType'
 
-export const useGetPosts = (): {loading: boolean, data: PostType[]} => {
-const [loading, setLoading] = useState(true);
-const [data, setData] = useState([])
+export const useGetPosts = (): { loading: boolean; data: PostType[] } => {
+  const [loading, setLoading] = useState(true)
+  const [data, setData] = useState([])
 
   useEffect(() => {
-    const fetchData = async () =>{
-      setLoading(true);
+    const fetchData = async () => {
+      setLoading(true)
       try {
-        const {data: response} = await postsApi.get('');
-        setData(response);
+        const { data: response } = await postsApi.get('')
+        setData(response)
       } catch (error) {
-        const errorData = axios.isAxiosError(error) ? error.response?.data : error;
-        throw Error(errorData);
+        const errorData = axios.isAxiosError(error)
+          ? error.response?.data
+          : error
+        throw Error(errorData)
       }
-      setLoading(false);
+      setLoading(false)
     }
 
-    fetchData();
-  }, []); 
+    fetchData()
+  }, [])
 
-  return {loading, data}
+  return { loading, data }
 }
-

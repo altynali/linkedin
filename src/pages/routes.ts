@@ -1,10 +1,10 @@
-import { Dashboard } from "./dashboard/Dashboard.lazy";
-import NotFound from "./notFound/NotFound";
-import { RouteProps } from "react-router-dom";
+import { Dashboard } from './dashboard/Dashboard.lazy'
+import NotFound from './notFound/NotFound'
+import { RouteProps } from 'react-router-dom'
 
 export enum AppRoutes {
-  Main = "/",
-  NotFound = "*",
+  Main = '/',
+  NotFound = '*',
 }
 
 export type RouteType = {
@@ -14,4 +14,4 @@ export type RouteType = {
 export const routes: RouteType[] = [
   { path: AppRoutes.Main, Component: Dashboard },
   { path: AppRoutes.NotFound, Component: NotFound },
-];
+]

@@ -1,12 +1,12 @@
-.root{
+.root {
     max-height: 40px;
     margin-left: 10px;
 }
 
-.root > form{
+.root>form {
     background: #f0f4fc;
 }
 
-.root form{
+.root form {
     max-height: 40px;
 }

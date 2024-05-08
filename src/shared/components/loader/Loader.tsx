@@ -1,5 +1,5 @@
-import { CircularProgress } from "@mui/material"
-import classes from "./Loader.module.css"
+import { CircularProgress } from '@mui/material'
+import classes from './Loader.module.css'
 
 export const Loader = () => {
   return (
